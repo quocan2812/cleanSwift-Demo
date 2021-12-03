@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GroupButtonView" customModule="CleanSwiftDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="247"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1w-tC-8a6">
+                    <rect key="frame" x="40" y="20" width="70" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Hq0-bB-TtB"/>
+                        <constraint firstAttribute="width" constant="70" id="mBl-Ef-knf"/>
+                    </constraints>
+                    <state key="normal" title="FIRST"/>
+                    <connections>
+                        <action selector="clickFirstBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="NIG-QU-CR5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkU-vz-H40">
+                    <rect key="frame" x="272" y="20.5" width="71" height="39"/>
+                    <state key="normal" title="SECOND"/>
+                    <connections>
+                        <action selector="clickSecondBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="296-cf-2eo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rkU-vz-H40" firstAttribute="height" secondItem="W1w-tC-8a6" secondAttribute="height" multiplier="0.975" id="3uf-YO-Au9"/>
+                <constraint firstItem="rkU-vz-H40" firstAttribute="width" secondItem="W1w-tC-8a6" secondAttribute="width" multiplier="1.01429" id="Fov-kW-dMe"/>
+                <constraint firstItem="W1w-tC-8a6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" symbolic="YES" id="HkZ-1Z-nSX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rkU-vz-H40" secondAttribute="trailing" constant="60" id="Ldx-mY-3WZ"/>
+                <constraint firstItem="rkU-vz-H40" firstAttribute="centerY" secondItem="W1w-tC-8a6" secondAttribute="centerY" id="eRI-iD-iUw"/>
+                <constraint firstItem="W1w-tC-8a6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="qaB-As-Ifr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="firstBtn" destination="W1w-tC-8a6" id="h10-tf-Amw"/>
+                <outlet property="secondBtn" destination="rkU-vz-H40" id="T2d-J9-lsS"/>
+            </connections>
+            <point key="canvasLocation" x="-18.115942028985508" y="90.066964285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
