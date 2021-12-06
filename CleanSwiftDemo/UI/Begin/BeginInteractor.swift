@@ -7,8 +7,14 @@
 
 import Foundation
 
+protocol BeginInteractorProtocol {
+    func getListCoin()
+    func clickFirstButtonInButtonView()
+    
+}
+
 final class BeginInteractor {
-    private let presenter: BeginPresenter
+    private let presenter: BeginPresenterProtocol
     private let worker: BeginWorker
     private var index: Int?
     private var listCoins: [CoinNameModel]?
@@ -18,7 +24,10 @@ final class BeginInteractor {
         self.presenter = presenter
         self.worker = worker
     }
-    
+ 
+}
+
+extension BeginInteractor: BeginInteractorProtocol {
     func getListCoin() {
         self.worker.getData { listCoins in
         self.presenter.showListCoin(list: listCoins)
@@ -32,5 +41,4 @@ final class BeginInteractor {
         
         
     }
-    
 }

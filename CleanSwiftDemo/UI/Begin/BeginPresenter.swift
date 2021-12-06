@@ -7,11 +7,20 @@
 
 import Foundation
 
+protocol BeginPresenterProtocol {
+    func showListCoin(list: [CoinNameModel])
+    func changeBackgroundView(flag: Bool)
+}
+
 final class BeginPresenter {
     weak var viewController: BeginViewController?
     init(viewController: BeginViewController) {
         self.viewController = viewController
     }
+    
+}
+
+extension BeginPresenter: BeginPresenterProtocol {
     func showListCoin(list: [CoinNameModel]) {
         self.viewController?.dislayDataWithList(listData: list)
     }

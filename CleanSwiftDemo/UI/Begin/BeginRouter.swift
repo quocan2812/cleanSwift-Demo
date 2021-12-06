@@ -8,8 +8,15 @@
 import Foundation
 import UIKit
 
-final class BeginRouter {
+protocol BeginRouterProtocol: AnyObject {
+    var viewController: BeginViewController? { get set }
     
+    func  navigateToDetailViewController(withModel: CoinNameModel)
+
+}
+
+final class BeginRouter {
+
     weak var viewController: BeginViewController?
     
     private  var nav: UINavigationController? {
@@ -19,6 +26,10 @@ final class BeginRouter {
     init(viewController: BeginViewController) {
         self.viewController = viewController
     }
+
+}
+
+extension BeginRouter: BeginRouterProtocol {
     
     func  navigateToDetailViewController(withModel: CoinNameModel)  {
         let detailViewController = DetailConfig.makeViewController()
@@ -27,5 +38,7 @@ final class BeginRouter {
     }
     
 }
+
+
 
 

@@ -9,8 +9,8 @@ import UIKit
 
 class BeginViewController: UIViewController {
     
-    var router: BeginRouter?
-    var interactor: BeginInteractor?
+    var router: BeginRouterProtocol?
+    var interactor: BeginInteractorProtocol?
     private var listName: [CoinNameModel]?
     override func viewDidLoad() {
         super.viewDidLoad()
