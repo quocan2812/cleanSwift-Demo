@@ -7,10 +7,17 @@
 
 import UIKit
 
+protocol BeginViewControllerProtocol{
+    func displayBackground(flag: Bool)
+    func dislayDataWithList(listData: [CoinNameModel])
+    
+}
+
 class BeginViewController: UIViewController {
     
     var router: BeginRouterProtocol?
     var interactor: BeginInteractorProtocol?
+    
     private var listName: [CoinNameModel]?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -125,6 +132,10 @@ extension BeginViewController: UITableViewDelegate, UITableViewDataSource {
             router?.navigateToDetailViewController(withModel: nameCoinModel)
         }
     }
+    
+}
+
+extension BeginViewController: BeginViewControllerProtocol {
     
 }
 
