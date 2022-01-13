@@ -23,6 +23,7 @@
 		305D953B274DFB9100922AAA /* BeginConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D953A274DFB9100922AAA /* BeginConfig.swift */; };
 		305D953D274E18A900922AAA /* LauchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D953C274E18A900922AAA /* LauchViewController.swift */; };
 		306FF4E9278FE47700F7485E /* UiView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306FF4E8278FE47700F7485E /* UiView_Extension.swift */; };
+		306FF4EC2790153D00F7485E /* EntitySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306FF4EB2790153D00F7485E /* EntitySetting.swift */; };
 		30B5ADFE26D636AF002FC557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B5ADFD26D636AF002FC557 /* AppDelegate.swift */; };
 		30B5AE0026D636AF002FC557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B5ADFF26D636AF002FC557 /* SceneDelegate.swift */; };
 		30B5AE0226D636AF002FC557 /* BeginViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B5AE0126D636AF002FC557 /* BeginViewControllerViewController.swift */; };
@@ -68,6 +69,7 @@
 		305D953A274DFB9100922AAA /* BeginConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginConfig.swift; sourceTree = "<group>"; };
 		305D953C274E18A900922AAA /* LauchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchViewController.swift; sourceTree = "<group>"; };
 		306FF4E8278FE47700F7485E /* UiView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiView_Extension.swift; sourceTree = "<group>"; };
+		306FF4EB2790153D00F7485E /* EntitySetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySetting.swift; sourceTree = "<group>"; };
 		30B5ADFA26D636AF002FC557 /* CleanSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B5ADFD26D636AF002FC557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B5ADFF26D636AF002FC557 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		306FF4EA2790151D00F7485E /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				306FF4EB2790153D00F7485E /* EntitySetting.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		30B5ADF126D636AF002FC557 = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +228,7 @@
 		30B5ADFC26D636AF002FC557 /* CleanSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				306FF4EA2790151D00F7485E /* Singleton */,
 				306FF4E7278FE42100F7485E /* Util */,
 				303758B4274E4193006C0D94 /* Model */,
 				305D952E274DF91B00922AAA /* UI */,
@@ -390,6 +401,7 @@
 				305D953D274E18A900922AAA /* LauchViewController.swift in Sources */,
 				30B5AE0226D636AF002FC557 /* BeginViewControllerViewController.swift in Sources */,
 				305D9537274DF9CE00922AAA /* BeginWorker.swift in Sources */,
+				306FF4EC2790153D00F7485E /* EntitySetting.swift in Sources */,
 				303758B92758B625006C0D94 /* DetailConfig.swift in Sources */,
 				303758BE2759D208006C0D94 /* GroupButtonView.swift in Sources */,
 				30B5ADFE26D636AF002FC557 /* AppDelegate.swift in Sources */,
