@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3003F07127B1098800637547 /* CustomComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F07027B1098800637547 /* CustomComponent.swift */; };
 		303758B1274E2DAE006C0D94 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303758B0274E2DAE006C0D94 /* DetailView.swift */; };
 		303758B3274E4184006C0D94 /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303758B2274E4184006C0D94 /* NameModel.swift */; };
 		303758B72758B3AD006C0D94 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303758B62758B3AD006C0D94 /* DetailViewController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3003F07027B1098800637547 /* CustomComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponent.swift; sourceTree = "<group>"; };
 		303758B0274E2DAE006C0D94 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		303758B2274E4184006C0D94 /* NameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModel.swift; sourceTree = "<group>"; };
 		303758B62758B3AD006C0D94 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3003F06F27B108E300637547 /* CustomComponent */ = {
+			isa = PBXGroup;
+			children = (
+				3003F07027B1098800637547 /* CustomComponent.swift */,
+			);
+			path = CustomComponent;
+			sourceTree = "<group>";
+		};
 		303758AF274E2D86006C0D94 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +238,7 @@
 		30B5ADFC26D636AF002FC557 /* CleanSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3003F06F27B108E300637547 /* CustomComponent */,
 				306FF4EA2790151D00F7485E /* Singleton */,
 				306FF4E7278FE42100F7485E /* Util */,
 				303758B4274E4193006C0D94 /* Model */,
@@ -407,6 +418,7 @@
 				30B5ADFE26D636AF002FC557 /* AppDelegate.swift in Sources */,
 				305D9531274DF96400922AAA /* BeginInteractor.swift in Sources */,
 				305D9533274DF96F00922AAA /* BeginRouter.swift in Sources */,
+				3003F07127B1098800637547 /* CustomComponent.swift in Sources */,
 				303758B3274E4184006C0D94 /* NameModel.swift in Sources */,
 				30B5AE0026D636AF002FC557 /* SceneDelegate.swift in Sources */,
 				303758BC2758BADE006C0D94 /* DetailShowView.swift in Sources */,

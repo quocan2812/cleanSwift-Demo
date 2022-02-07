@@ -68,9 +68,9 @@ class BeginViewController: UIViewController {
   
         ])
     }    
-    private lazy var titleLable: UILabel = {
-        let titleLabel = UILabel()
-        titleLabel.backgroundColor = UIColor.brown
+    private lazy var titleLable: RoundedLabel = {
+        let titleLabel = RoundedLabel()
+      //  titleLabel.backgroundColor = UIColor.brown
         titleLabel.textColor = UIColor.white
         titleLabel.text = "Welcome"
         titleLabel.textAlignment = .center
